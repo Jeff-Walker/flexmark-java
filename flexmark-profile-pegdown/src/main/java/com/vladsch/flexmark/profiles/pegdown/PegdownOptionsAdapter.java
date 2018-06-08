@@ -56,6 +56,9 @@ public class PegdownOptionsAdapter {
     public static DataHolder flexmarkOptions(int pegdownExtensions, Extension... extensions) {
         return flexmarkOptions(false, pegdownExtensions, extensions);
     }
+    public static DataHolder flexmarkOptions(int pegdownExtensions) {
+        return flexmarkOptions(false, pegdownExtensions, new Extension[] {});
+    }
 
     public static DataHolder flexmarkOptions(boolean strictHtml, int pegdownExtensions, Extension... extensions) {
         PegdownOptionsAdapter optionsAdapter = new PegdownOptionsAdapter(pegdownExtensions);
